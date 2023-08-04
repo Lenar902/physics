@@ -1,0 +1,92 @@
+.section-price {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 100px;    
+    width: 100%;
+    max-width: 1600px;
+    text-align: center;
+
+    @include bgImage("./../img/price/price.jpg");    
+
+    &::before {
+        @extend %overlay;
+    }    
+    
+}
+
+.section-price__content {
+    position: relative;
+    z-index: 9;
+}
+
+.section-price__header {
+    margin-bottom: 80px;
+
+    .title, .subtitle {
+        color: #fff;
+    }
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        margin-bottom: 50px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        margin-bottom: 40px;
+    }
+}
+
+.section-price__title {
+    margin-bottom: 40px; 
+    
+    /* Tablet */
+    @media (max-width: 1199px) {
+        margin-bottom: 20px;        
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        margin-bottom: 10px;
+    }
+}
+
+.section-price__row {
+    display: flex;
+    justify-content: center;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    & > * {
+        width: 300px;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            width: 270px;
+        }
+
+        /* Mobile */
+        @media (max-width: 899px) {
+            width: 300px;
+        }
+
+        /* Mobile XS */
+        @media (max-width: 599px) {
+            width: 100%;
+        }
+    }
+
+    & > * + * {
+        margin-left: 30px;
+
+        /* Mobile */
+        @media (max-width: 899px) {
+            margin-left: 0;
+            margin-top: 30px;
+        }
+    }
+}

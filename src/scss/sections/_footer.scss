@@ -1,0 +1,12 @@
+.footer {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 50px 0;    
+    background-color: $darkgray;  
+    
+    &__row {
+        @media (max-width:767px) {
+            text-align: center;
+        }
+    }
+}

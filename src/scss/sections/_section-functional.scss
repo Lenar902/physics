@@ -1,0 +1,13 @@
+.section-functional {
+    padding: 80px 0;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        padding: 50px 0;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        padding: 38px 0 40px;
+    }
+}

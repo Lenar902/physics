@@ -1,0 +1,21 @@
+.footer-nav {
+    list-style-type: none;
+}
+
+.footer-nav__item {
+    & + & {
+        margin-top: 15px;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

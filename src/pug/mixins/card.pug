@@ -1,0 +1,6 @@
+mixin card(img, title, info)
+    .card
+        .card__image
+            img(class="card__image", src="./img/functional/" + img, alt= title, height="100")
+        h4.card__title #{title}
+        p.card__description #{info}            

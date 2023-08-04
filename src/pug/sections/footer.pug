@@ -1,0 +1,47 @@
+- 
+    const footerNavFirst = [
+        {
+            title: "Новости",
+            link: "#"
+        },
+        {
+            title: "Услуги",
+            link: "#"
+        }
+    ];
+
+- 
+    const footerNavSecond = [
+        {
+            title: "Поиск",
+            link: "#"
+        },
+        {
+            title: "Контакты",
+            link: "#"
+        }
+    ];
+
+- 
+    const footerNavThird = [
+        {
+            title: "О сайте",
+            link: "#"
+        }
+    ];   
+
+footer
+    .footer
+        .container 
+            .row.footer__row 
+                .col-12.col-md-3                 
+                    +footer-nav(footerNavFirst)
+                .col-12.col-md-3                 
+                    +footer-nav(footerNavSecond)
+                .col-12.col-md-3                 
+                    +footer-nav(footerNavThird)
+                .col-12.col-md-3
+                    include ./../block/social-icons.pug   
+    .copyright
+        .container 
+            p.copyright__text &copy; Copyright 2023. Все права защищены.

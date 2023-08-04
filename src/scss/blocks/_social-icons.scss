@@ -1,0 +1,15 @@
+.social-icons {
+    display: flex;
+    align-items: center;  
+    @media (max-width:767px) {
+        display: block;
+    }  
+}
+
+.social-icons__item {
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

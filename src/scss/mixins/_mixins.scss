@@ -1,0 +1,25 @@
+@mixin bgImage($path) {  
+    background-image: url($path);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+%overlay {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+@mixin packageHeader($fontSize) {  
+    font-weight: 700;
+    font-size: $fontSize;
+    line-height: 1;    
+    text-transform: uppercase;
+}

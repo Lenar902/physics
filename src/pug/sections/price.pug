@@ -1,0 +1,35 @@
+- 
+    const packageNavTest = [
+        "Интерактивные задания",
+        "Задачи лёгкой и средней сложности",
+        "1 занятие в день",
+        "Поддержка по Email"
+    ];
+
+- 
+    const packageNavStandart = [
+        "Интерактивные задания",
+        "Качественные и количественные задачи ",
+        "3 месяца занятий",
+        "2 занятия в день",
+        "Поддержка по Email и по Skype"
+    ];
+
+- 
+    const packageNavFull = [
+        "Интерактивные задания",
+        "Задачи любой сложности",
+        "4 месяца занятий",
+        "3 занятия в день",
+        "Поддержка по Email, Skype, Sluck"
+    ];
+
+section.section-price
+    .section-price__content
+        .container
+            header.section-price__header              
+                h3.subtitle Выберите подходящий тариф	
+            .section-price__row                
+                +package("тестовый", 400, "руб./нед", packageNavTest)
+                +package("стандартный", 2000, "руб./мес", packageNavStandart, true)
+                +package("полный", 4000, "руб./мес", packageNavFull)     

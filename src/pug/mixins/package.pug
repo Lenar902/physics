@@ -1,0 +1,15 @@
+mixin package(title, price, period, packageItem, btnMod= false)
+    .package
+        .package__header
+            h3.package__title #{title}
+            .package__price.package__price--letter-spacing #{price}
+            span.package__period= period
+        ul.package__list
+            each item in packageItem
+                li #{item}
+        if (!btnMod)   
+            .package__button
+                button.button-outline оплатить
+        else
+            .package__button
+                button.button-outline.button-outline--btn-standart оплатить

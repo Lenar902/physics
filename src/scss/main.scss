@@ -1,0 +1,40 @@
+/*Libs*/
+@import './libs/bootstrap-reboot.scss';
+@import './libs/bootstrap-grid.scss';
+@import './libs/owl.carousel.min.scss';
+@import './libs/owl.theme.default.min.scss';
+
+/*Fonts*/
+@import './fonts/fonts';
+
+/*Vars*/
+@import './variables/vars';
+
+/*Base*/
+@import './base/base';
+
+/*Mixins*/
+@import './mixins/mixins';
+
+/*Blocks*/
+@import './blocks/logo';
+@import './blocks/input';
+@import './blocks/button';
+@import './blocks/card';
+@import './blocks/package';
+@import './blocks/button-outline';
+@import './blocks/social-icons';
+@import './blocks/slider';
+@import './blocks/title';
+@import './blocks/copyright';
+@import './blocks/footer-nav';
+
+/*Sections*/
+@import './sections/header';
+@import './sections/section-functional';
+@import './sections/section-price';
+@import './sections/feedback';
+@import './sections/footer';
+
+/*Media*/
+@import './media/media';
